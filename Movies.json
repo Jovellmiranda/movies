@@ -1,0 +1,46 @@
+{
+    "movie1" : {
+       "Title" : "The Lord of the Rings: The Two Towers",
+       "Actor" : "Elijah Wood",
+       "Genre":"Action, Adventure, Drama",
+       "Link":"https://www.imdb.com/title/tt0167261/?ref_=chttp_t_13",
+       "id": 1
+    },
+    
+    "movie2" : {
+        "Title" : "Forrest Gump",
+        "Actor" : "Tom Hanks",
+        "Genre":"Drama, Romance",
+        "Link":"https://www.imdb.com/title/tt0109830/?ref_=chttp_t_11",
+        "id": 2
+     },
+    
+     "movie3" : {
+        "Title" : "Back to the Future",
+        "Actor" : "Michael J. Fox",
+        "Genre":"Action, Comedy, Sci-fi",
+        "Link":"https://www.imdb.com/title/tt0088763/?ref_=chttp_t_31",
+        "id": 3
+     },
+      "movie4" : {
+        "Title" : "The Matrix",
+        "Actor" : "Keanu Reeves",
+        "Genre":"Action. Sco-fi",
+        "Link":"https://www.imdb.com/title/tt0133093/?ref_=chttp_t_16",
+        "id": 4
+     },
+      "movie5" : {
+         "Title" : "The Lion King ",
+         "Artist" : "Matthew Broderick",
+         "Genre":"Animation, Adventure, Drama",
+         "Link":"https://www.imdb.com/title/tt0110357/?ref_=chttp_t_37",
+         "id": 5
+   },
+      "movie6" : {
+         "Title" : "Oppenheimer ",
+         "Artist" : "Cilian Murphy",
+         "Genre":"Biography, Drama, History",
+         "Link":"https://www.imdb.com/title/tt15398776/?ref_=chttp_t_47",
+         "id": 6
+   }
+}
