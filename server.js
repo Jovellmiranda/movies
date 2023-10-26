@@ -12,7 +12,7 @@ var movie = {
 }
 //Show the list of Films
 app.get('/getFilms', function (req, res) {
-   fs.readFile( __dirname + "/" + "Movies.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "films.json", 'utf8', function (err, data) {
       console.log( data );
       res.end( data );
    });
@@ -20,7 +20,7 @@ app.get('/getFilms', function (req, res) {
 //Add Film
 app.post('/addFilm', function (req, res) {
     // First read existing movie.
-    fs.readFile( __dirname + "/" + "Movies.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "films.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
        data["movie7"] = movie["movie7"];
        console.log( data );
@@ -30,7 +30,7 @@ app.post('/addFilm', function (req, res) {
 //Show specific Movie
 app.get('/getFilm/:id', function (req, res) {
     // First read existing movie.
-    fs.readFile( __dirname + "/" + "Movies.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "films.json", 'utf8', function (err, data) {
        var movies = JSON.parse( data );
        var movie = movies["movie" + req.params.id];
        console.log( movie );
@@ -40,7 +40,7 @@ app.get('/getFilm/:id', function (req, res) {
 //delete specific Movie
 app.delete('/deleteFilm/:id', function (req, res) {
     // First read existing movie.
-    fs.readFile( __dirname + "/" + "Movies.json", 'utf8', function (err, data) {
+    fs.readFile( __dirname + "/" + "films.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
        delete data["movie" + req.params.id];
        console.log( data );
